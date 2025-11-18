@@ -1,0 +1,22 @@
+- Identifique e justifique os tipos de relacionamento entre Seguro e Carro e entre Seguro e Cliente
+é uma agregação, porque o veiculo ainda existe mesmo sem seguro
+
+
+- Justifique o tipo de relacionamento (agregação ou composição) entre Seguro e Carro.
+Essa é a relação correta porque o objeto parte (Carro ou Cliente) pode existir independentemente do objeto todo (SeguroVeiculo), mas o contrario não
+
+
+- Escreva uma breve explicação sobre como você representaria um cliente com múltiplos seguros em seu modelo.
+criaria um novo atributo chamado seguros e ele seria uma array que armazenaria cada seguro do cliente
+
+
+- Explique o benefício de usar herança para representar esses diferentes tipos de seguro.
+Eu evito a redundância, as classes filhas recebem esse trabalho pronto de graça e só precisam se preocupar em sobrescrever (o Polimorfismo) o calcular_valor() para adicionar a lógica de preço específica (a taxa extra de R$ 50 ou R$ 30). Isso torna o código mais limpo
+
+
+- Explique como este diagrama ajuda a visualizar a estrutura do sistema para um cliente específico.
+é basicamente um teste de mesa que auxilia a gente a ver de forma mais ampla e limpa a estrutura do programa
+
+
+- Explique a importância de encapsular informações sensíveis, como CPF e placa de veículos, em sistemas de seguros.
+protege a integridade do programa, evitando alterações que possa levar o programa a um estado de inconsistência
